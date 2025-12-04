@@ -1,18 +1,19 @@
 // Burger menu toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
   const menuToggle = document.getElementById('menuToggle');
-  const menuOverlay = document.getElementById('menuOverlay');
+  const menuDropdown = document.getElementById('menuDropdown');
 
-  menuToggle.addEventListener('click', function() {
+  menuToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
     menuToggle.classList.toggle('active');
-    menuOverlay.classList.toggle('active');
+    menuDropdown.classList.toggle('active');
   });
 
   // Close menu when clicking outside
-  menuOverlay.addEventListener('click', function(e) {
-    if (e.target === menuOverlay) {
+  document.addEventListener('click', function(e) {
+    if (!menuToggle.contains(e.target) && !menuDropdown.contains(e.target)) {
       menuToggle.classList.remove('active');
-      menuOverlay.classList.remove('active');
+      menuDropdown.classList.remove('active');
     }
   });
 });

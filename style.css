@@ -198,11 +198,14 @@ body {
 }
 
 .quote-text {
-  font-family: 'Eagle Lake', cursive;
+  font-family: 'Eagle Lake', 'Cinzel', 'Uncial Antiqua', cursive, serif;
   font-size: 1.4rem;
   color: #333;
   margin-bottom: 40px;
   letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .quote-signature {

@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: 100vh;
   z-index: 1;
+  margin-bottom: 100px;
 }
 
 .hero-img {
@@ -181,13 +182,48 @@ body {
   flex-shrink: 0;
 }
 
+/* Quote Section */
+.quote-section {
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.quote-line {
+  width: 150px;
+  height: 1px;
+  background-color: #333;
+  margin: 0 auto 10px;
+}
+
+.quote-text {
+  font-family: 'Eagle Lake', cursive;
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.quote-signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-signature-img {
+  width: 200px;
+  height: auto;
+  opacity: 0.8;
+}
+
 /* Footer */
 footer {
   width: 100%;
   text-align: center;
   padding: 2rem;
-  background-color: #333;
-  color: white;
+  background-color: transparent;
+  color: #333;
 }
 
 footer p {

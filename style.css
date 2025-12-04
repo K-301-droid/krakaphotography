@@ -66,9 +66,19 @@ body {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #333;
   border-radius: 2px;
   transition: all 0.3s ease;
+}
+
+/* Make menu white when over hero image (home page) */
+.home-page .menu-toggle span {
+  background-color: #ffffff;
+}
+
+/* Make menu dark when scrolled past hero image */
+.home-page .menu-toggle.scrolled-past-hero span {
+  background-color: #333;
 }
 
 .menu-toggle.active span:nth-child(1) {

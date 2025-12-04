@@ -1,26 +1,19 @@
-// Simple JavaScript for enhanced user experience
+// Burger menu toggle functionality
 document.addEventListener('DOMContentLoaded', function() {
-  // Add click event for images (can be extended to lightbox)
-  const images = document.querySelectorAll('.photo-grid img');
-  
-  images.forEach(img => {
-    img.addEventListener('click', function() {
-      // Can add lightbox functionality here later
-      console.log('Image clicked:', this.src);
-    });
+  const menuToggle = document.getElementById('menuToggle');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  menuToggle.addEventListener('click', function() {
+    menuToggle.classList.toggle('active');
+    menuOverlay.classList.toggle('active');
   });
 
-  // Smooth scroll for anchor links (if navigation is added later)
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    });
+  // Close menu when clicking outside
+  menuOverlay.addEventListener('click', function(e) {
+    if (e.target === menuOverlay) {
+      menuToggle.classList.remove('active');
+      menuOverlay.classList.remove('active');
+    }
   });
 });
 

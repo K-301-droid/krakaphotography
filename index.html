@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="assets/photos/logo.jpg" alt="Kråka Photography Logo" class="logo">
-    <h1>My Photography & Video Portfolio</h1>
-  </header>
+  <!-- Signature placeholder - top left -->
+  <div class="signature-container">
+    <img src="assets/photos/logo.jpg" alt="Signature" class="signature" id="signature">
+  </div>
 
-  <main>
-    <section class="gallery">
-      <h2>Photography</h2>
-      <div class="photo-grid">
-        <img src="assets/photos/logo.jpg" alt="Photo">
-        <img src="assets/photos/photo2.jpg" alt="Photo">
-      </div>
-    </section>
+  <!-- Burger menu - top right -->
+  <div class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-    <section class="videos">
-      <h2>Videos</h2>
-      <div class="video-container">
-        <video controls src="assets/videos/video1.mp4"></video>
-      </div>
-    </section>
-  </main>
+  <!-- Menu overlay -->
+  <div class="menu-overlay" id="menuOverlay">
+    <nav class="menu-nav">
+      <!-- Links will be added here later -->
+    </nav>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Kråka Photography</p>
-  </footer>
+  <!-- Full page hero image -->
+  <div class="hero-image">
+    <img src="assets/photos/logo.jpg" alt="Hero Image" class="hero-img" id="heroImg">
+  </div>
 
   <script src="script.js"></script>
 </body>

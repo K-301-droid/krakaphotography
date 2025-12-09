@@ -253,6 +253,152 @@ body {
   display: block;
 }
 
+/* Intro Section */
+.intro-section {
+  width: 100%;
+  padding: 30px 20px 40px;
+  background-color: #ffffff;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.intro-line {
+  width: 150px;
+  height: 1px;
+  background-color: #333;
+  margin: 0 auto 30px;
+}
+
+.intro-text {
+  font-family: 'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', serif;
+  font-size: 1.65rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 15px;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-decoration: none !important;
+  cursor: default;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  pointer-events: none;
+}
+
+.intro-text:hover {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  color: #333 !important;
+}
+
+.intro-text:focus {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.intro-text:active {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.intro-date {
+  font-family: 'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', serif;
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+  cursor: default;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  pointer-events: none;
+}
+
+.intro-date:hover {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+  color: #666 !important;
+}
+
+.intro-date:focus {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.intro-date:active {
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: none !important;
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 40px 20px;
+    margin-top: -100px;
+  }
+  
+  .intro-text {
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+  
+  .intro-date {
+    font-size: 0.9rem;
+  }
+}
+
 /* Quote Section */
 .quote-section {
   width: 100%;

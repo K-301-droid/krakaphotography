@@ -211,17 +211,31 @@ body {
 }
 
 .menu-social-row {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
-  gap: 10px;
   margin-top: 5px;
 }
 
+.menu-social-row > * {
+  margin-right: 10px;
+}
+
+.menu-social-row > *:last-child {
+  margin-right: 0;
+}
+
 .menu-icon-only {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 12px;
 }
@@ -229,9 +243,14 @@ body {
 .menu-icon {
   width: 32px;
   height: 32px;
-  object-fit: cover;
+  max-width: 32px;
+  max-height: 32px;
+  -o-object-fit: contain;
+  object-fit: contain;
   border-radius: 4px;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
+  display: block;
 }
 
 /* Quote Section */
@@ -371,18 +390,32 @@ body {
 }
 
 .contact-social-links {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
-  gap: 30px;
   margin-top: 3rem;
   padding: 2rem 0;
 }
 
+.contact-social-links > * {
+  margin-right: 30px;
+}
+
+.contact-social-links > *:last-child {
+  margin-right: 0;
+}
+
 .contact-social-link {
+  display: -ms-inline-flexbox;
   display: inline-flex;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-decoration: none;
 }
@@ -390,11 +423,17 @@ body {
 .contact-social-icon {
   width: 48px;
   height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  -o-object-fit: contain;
   object-fit: contain;
+  display: block;
+  -ms-transition: -ms-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
 
 .contact-social-link:hover .contact-social-icon {
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 

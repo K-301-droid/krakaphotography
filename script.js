@@ -47,5 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check on page load
     updateMenuColor();
   }
+
 });
 

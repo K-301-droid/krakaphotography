@@ -23,6 +23,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
   display: block;
   animation: slideIn 1s ease-out;
 }
@@ -268,6 +269,13 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: -80px;
+  box-sizing: border-box;
+}
+
+.intro-section > * {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .intro-line {
@@ -278,19 +286,22 @@ body {
 }
 
 .intro-text {
-  font-family: 'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', serif;
+  font-family: 'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', 'Times New Roman', Times, serif;
   font-size: 1.65rem;
   font-style: italic;
   font-weight: 400;
   color: #333;
   line-height: 1.8;
   max-width: 800px;
+  width: 100%;
   margin: 0 auto 15px;
+  padding: 0;
   letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   text-decoration: none !important;
+  text-align: center !important;
   cursor: default;
   border: none !important;
   outline: none !important;
@@ -299,6 +310,10 @@ body {
   transform: none !important;
   animation: none !important;
   pointer-events: none;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  box-sizing: border-box;
 }
 
 .intro-text:hover {
@@ -333,7 +348,7 @@ body {
 }
 
 .intro-date {
-  font-family: 'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', serif;
+  font-family: 'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', 'Times New Roman', Times, serif;
   font-size: 1rem;
   color: #666;
   font-style: italic;
@@ -341,7 +356,9 @@ body {
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-decoration: none !important;
+  text-align: center !important;
   cursor: default;
   border: none !important;
   outline: none !important;
@@ -350,6 +367,12 @@ body {
   transform: none !important;
   animation: none !important;
   pointer-events: none;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .intro-date:hover {

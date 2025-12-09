@@ -48,5 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
     updateMenuColor();
   }
 
+  // Ensure fonts are loaded for intro text
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function() {
+      const introText = document.querySelector('.intro-text');
+      const introDate = document.querySelector('.intro-date');
+      if (introText) {
+        introText.style.fontFamily = "'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', 'Times New Roman', Times, serif";
+      }
+      if (introDate) {
+        introDate.style.fontFamily = "'Cormorant Garamond', 'Playfair Display', 'Eagle Lake', 'Times New Roman', Times, serif";
+      }
+    });
+  }
 });
 

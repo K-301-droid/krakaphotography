@@ -431,8 +431,8 @@ body {
   flex-direction: row;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-align: stretch;
   align-items: stretch;
   gap: 0;
@@ -440,10 +440,30 @@ body {
   overflow-y: hidden;
   background-color: #ffffff;
   padding: 40px 0;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.image-gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.image-gallery::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.image-gallery::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.image-gallery::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .gallery-img {
   width: calc(100% / 6);
+  min-width: 300px;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
@@ -462,8 +482,7 @@ body {
 
 @media (max-width: 1200px) {
   .gallery-img {
-    width: calc(100% / 3);
-    min-width: 33.333%;
+    min-width: 300px;
   }
 }
 
